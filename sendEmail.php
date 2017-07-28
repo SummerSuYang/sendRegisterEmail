@@ -38,7 +38,9 @@ if($listLength)
 {
     $item = $redis->rpop($queueName);
     $arr = explode('%',$item);
-    $password = file_get_contents('password.txt');
+
+    $passPath = dirname(__FILE__).'/password.txt';
+    $password = file_get_contents($passPath);
 
     $account = [
         'server' => 'smtp.163.com',

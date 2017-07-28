@@ -7,7 +7,7 @@
  */
 require_once 'redis.php';
 require_once 'db.php';
-echo 'ok';
+
 date_default_timezone_set('PRC');
 $NUM = 5;
 
